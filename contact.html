@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <script src="./js.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="animations.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👩🏻‍🦰</text></svg>"
+    />
+    <title>Rebecca Mansell</title>
+    <link
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body
+    class="mx-6 text-lg leading-relaxed text-blue-900 sm:text-base sm:mx-10 md:mx-9 lg:mx-8 bg-blue-50"
+  >
+    <!-- Navbar -->
+    <nav class="nav">
+      <!-- About / project / contact tabs -->
+      <span class="text-lg text-center md:text-xl">
+        <a href="index.html" class="pr-2 nav-item slideIn third">Back Home</a>
+      </span>
+
+      <!-- Cursive name -->
+      <div class="grid invisible md:pl-8 justify-self-start sm:visible">
+        <div>
+          <img
+            src="imgs/cursive-name.png"
+            alt="me"
+            height="150"
+            width="150"
+            class="rounded-full"
+          />
+        </div>
+      </div>
+    </nav>
+
+    <main class="w-full mx-auto md:w-auto md:mx-10">
+      <!-- Contact section -->
+      <section
+        class="mx-0 mt-12 mb-20 md:mb-0 md:-mt-20 md:py-24 lg:mx-28 xl:mx-48"
+        id="contact"
+      >
+        <!-- Contact title -->
+        <div class="flex flex-row pb-8">
+          <div class="w-full mr-4 border-indigo-200 sm:border-b-2 mb-7"></div>
+          <h2 class="text-center section-title js-show-on-scroll">Contact</h2>
+          <div class="w-full ml-4 border-indigo-200 sm:border-b-2 mb-7"></div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 justify-items-center">
+          <!-- Contact image -->
+          <div
+            class="hidden rounded-full js-show-on-scroll justify-self-start w-70 h-70 lg:w-80 lg:ml-24 lg:h-80 lg:flex"
+          >
+            <img
+              src="imgs/headshot.png"
+              alt="me"
+              height="500"
+              width="500"
+              class="rounded-full"
+            />
+          </div>
+
+          <!-- Contact image mobile -->
+          <!-- <div
+            class="grid mb-6 rounded-full w-18 h-18 justify-self-center sm:w-50 sm:h-50 md:hidden js-show-on-scroll"
+          >
+            <img
+              src="imgs/headshot.png"
+              alt="me"
+              height="200"
+              width="200"
+              class="rounded-full"
+            />
+          </div> -->
+
+          <!-- Contact text and buttons -->
+          <div class="grid items-center space-y-2">
+            <p class="px-0 mb-6 text-center sm:px-16 js-show-on-scroll md:px-0">
+              I’d love the opportunity to meet for an interview and demonstrate
+              my dedication and enthusiasm first-hand.
+            </p>
+            <div class="grid self-start justify-self-center">
+              <form action="https://formspree.io/f/mnqwoqao" method="POST">
+                <label>
+                  Name:
+                  <input
+                    type="text"
+                    name="name"
+                    class="w-full mb-6 border border-blue-200"
+                  />
+                </label>
+                <br />
+                <label>
+                  Email:
+                  <input
+                    type="email"
+                    name="email"
+                    class="w-full mb-6 border border-blue-200"
+                  />
+                </label>
+                <br />
+                <label>
+                  Message:
+                  <textarea
+                    name="message"
+                    class="w-full mb-6 border border-blue-200"
+                  ></textarea>
+                </label>
+                <br />
+                <button
+                  type="submit"
+                  class="px-3 py-2 mb-4 text-center text-indigo-500 transition border border-indigo-400 rounded shadow-sm js-show-on-scroll hover:shadow-none"
+                >
+                  Send
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

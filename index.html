@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <script src="./js.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="animations.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👩🏻‍🦰</text></svg>"
+    />
+    <title>Rebecca Mansell</title>
+  </head>
+
+  <body
+    class="mx-6 text-lg leading-relaxed text-blue-900 sm:text-base sm:mx-10 md:mx-9 lg:mx-8 bg-blue-50"
+  >
+    <!-- Navbar -->
+    <nav class="nav">
+      <!-- About / project / contact tabs -->
+      <span class="text-lg text-center md:text-xl">
+        <a href="#about" class="pr-2 nav-item slideIn first">About</a>
+        <a
+          href="#projects"
+          class="px-2 border-l-2 border-indigo-200 nav-item slideIn second"
+          >Projects</a
+        >
+        <a
+          href="contact.html"
+          class="pl-2 border-l-2 border-indigo-200 nav-item slideIn third"
+          >Contact</a
+        >
+      </span>
+
+      <!-- Cursive name -->
+      <div class="grid invisible md:pl-8 justify-self-start sm:visible">
+        <div>
+          <img
+            src="imgs/cursive-name.png"
+            alt="me"
+            height="150"
+            width="150"
+            class="rounded-full"
+          />
+        </div>
+      </div>
+    </nav>
+
+    <!-- Sections -->
+    <main class="w-full mx-auto md:w-auto md:mx-10">
+      <!-- Section 1: Header -->
+      <section class="section md:mr-28 js-show-on-scroll">
+        <div class="grid md:grid-cols-3 md:mt-0">
+          <div class="grid content-center md:col-span-2">
+            <h1 class="header-title">Full-Stack Developer</h1>
+
+            <span class="inline mt-6 md:mt-0">
+              <p class="inline header-text">I’m a</p>
+              <p class="inline font-bold header-text">problem solver</p>
+              <p class="block header-text md:inline">
+                with a penchant for creative thinking.
+              </p>
+            </span>
+
+            <!-- Scroll -->
+            <span
+              class="grid mt-20 text-indigo-400 justify-self-center"
+              id="scroll-arrow"
+            >
+              <p class="mb-3">Scroll</p>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="grid w-6 h-6 animate-bounce justify-self-center"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M16 17l-4 4m0 0l-4-4m4 4V3"
+                />
+              </svg>
+            </span>
+          </div>
+
+          <!-- Header image -->
+          <div class="header-image">
+            <img
+              src="imgs/computer.png"
+              alt="me"
+              height="500"
+              width="500"
+              class="rounded-full"
+            />
+          </div>
+
+          <!-- Target for scroll to disappear -->
+          <span id="theTarget"></span>
+        </div>
+      </section>
+
+      <!-- Section 2: About -->
+      <section class="section md:space-y-6" id="about">
+        <div class="grid grid-cols-1 lg:grid-cols-3">
+          <div class="col-span-1 space-y-3 lg:space-y-4 lg:col-span-2">
+            <!-- About title -->
+            <div class="flex flex-row mb-10 js-show-on-scroll md:mb-0">
+              <h2 class="mb-2 section-title">About</h2>
+              <div class="w-full ml-4 border-b-2 border-indigo-200 mb-7"></div>
+            </div>
+
+            <!-- About text -->
+            <div class="space-y-4 md:text-md js-show-on-scroll">
+              <p>
+                After exploring a couple of different industries and career
+                pathways, I finally bit the bullet in 2021 and decided to go
+                after my passion of website development; all guns blazing.
+              </p>
+              <p>
+                Just one year later, I’ve learned so much, yet my eagerness for
+                learning the tools of the trade has grown even stronger. I’m
+                hungry to provide solutions for people with my code!
+              </p>
+              <p class="hidden md:block">
+                I see website development as the best of both worlds… Applying
+                technical knowledge with out-of-the-box thinking and creativity.
+              </p>
+              <p class="hidden md:block">
+                My mission now is to utilise my abilities with a culture-driven
+                Brisbane-based company that I can call home.
+              </p>
+            </div>
+
+            <!-- About bullets -->
+            <div class="sm:grid sm:grid-cols-2 js-show-on-scroll">
+              <div class="space-y-4">
+                <p>A few technologies I know well:</p>
+                <ul class="text-indigo-500 list-none">
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>Tailwind CSS</li>
+                  <li>JavaScript</li>
+                  <li>React</li>
+                  <li>PHP</li>
+                  <li>MySQL</li>
+                  <li>Wordpress</li>
+                </ul>
+              </div>
+
+              <div class="mt-4 space-y-4 md:mt-0">
+                <p>I’m currently working on improving my knowledge of:</p>
+                <ul class="text-indigo-500 list-none">
+                  <li>Node.js</li>
+                  <li>Typescript</li>
+                  <li>Laravel</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 3: Projects -->
+      <section class="pt-20 space-y-6 mb-36 section" id="projects">
+        <!-- Projects title -->
+        <div class="w-full pb-6 md:w-2/3">
+          <div class="flex flex-row js-show-on-scroll">
+            <h2 class="mb-2 section-title">Projects</h2>
+            <div class="w-full ml-4 border-b-2 border-indigo-200 mb-7"></div>
+          </div>
+        </div>
+
+        <!-- Wildlife Watcher -->
+        <div class="grid grid-cols-1 pb-6 xl:grid-cols-2">
+          <div class="grid grid-cols-1 gap-1 mr-0 md:mr-12 xl:grid-cols-2">
+            <div>
+              <img
+                src="imgs/wildlife-watcher1.png"
+                alt="Wildlife Watcher screenshot 1"
+                class="hidden w-auto h-auto shadow xl:block"
+              />
+            </div>
+            <div>
+              <img
+                src="imgs/wildlife-watcher2.png"
+                alt="Wildlife Watcher screenshot 2"
+                class="hidden w-auto h-auto shadow xl:block"
+              />
+            </div>
+          </div>
+
+          <!-- Wildlife Wacther text -->
+          <div class="js-show-on-scroll">
+            <div class="col-span-1 mb-4 space-y-4">
+              <h3 class="font-serif text-2xl">Wildlife Watcher</h3>
+
+              <a
+                href="https://wildlife-watcher.rebeccamansell.dev/"
+                class="inline text-indigo-400"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="inline text-indigo-400"
+                  width="22"
+                  height="22"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-external-link"
+                >
+                  <path
+                    d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                  ></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+              </a>
+
+              <a
+                href="https://github.com/dev-rebecca/wildlife-watcher/"
+                class="inline text-indigo-400"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="inline text-indigo-400"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-github"
+                >
+                  <path
+                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                  ></path>
+                </svg>
+              </a>
+
+              <p>
+                A labour of love, I made this app to fulfill a wish I had to
+                keep track of the wildlife in my local area.
+              </p>
+              <p>
+                I wanted to create the entire project with vanilla JavaScript
+                and PHP to ensure I had a depth of knowledge before moving on to
+                learn any frameworks.
+              </p>
+              <p>
+                Personal highlights: Utilisation of database indexes to
+                categorise content per animal type, species or name. Longitude
+                and latitude recognition for Google Maps API. Components made
+                from scratch.
+              </p>
+            </div>
+
+            <!-- Wildlife Watcher bullets -->
+            <div class="grid grid-cols-2 js-show-on-scroll">
+              <div class="col-span-1">
+                <ul class="text-indigo-500 list-none">
+                  <li>JavaScript</li>
+                  <li class="flex md:hidden">Google Maps</li>
+                  <li class="hidden md:flex">Google Maps API</li>
+                  <li>Tailwind CSS</li>
+                  <li>Image handling</li>
+                </ul>
+              </div>
+
+              <div class="col-span-1">
+                <ul class="text-indigo-500 list-none">
+                  <li>REST API</li>
+                  <li>PHP</li>
+                  <li>MySQL</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Alternate Wildlife Watcher photos -->
+        <div
+          class="grid w-3/4 pb-20 space-x-4 sm:grid-cols-2 md:w-2/3 lg:h-1/2 h-3/4 lg:w-1/2 md:h-2/3 justify-self-center xl:hidden"
+        >
+          <div class="w-full h-full">
+            <img
+              src="imgs/wildlife-watcher1.png"
+              alt="Wildlife Watcher screenshot 1"
+              class="shadow"
+            />
+          </div>
+          <div class="hidden w-full h-full sm:block">
+            <img
+              src="imgs/wildlife-watcher2.png"
+              alt="Wildlife Watcher screenshot 2"
+              class="shadow"
+            />
+          </div>
+        </div>
+
+        <div class="w-full border-b-2 border-indigo-200 xl:pt-12"></div>
+
+        <!-- PHEM -->
+        <div class="grid grid-cols-1 pt-12 md:pt-20 xl:grid-cols-2">
+          <!-- PHEM text -->
+          <div>
+            <div class="mb-4 mr-6 space-y-4 js-show-on-scrol">
+              <h3 class="font-serif text-2xl">
+                PHEM - Mechatronics Engineering
+              </h3>
+
+              <a href="https://phem.com.au" class="inline text-indigo-400">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="inline text-indigo-400"
+                  width="22"
+                  height="22"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-external-link"
+                >
+                  <path
+                    d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                  ></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+              </a>
+
+              <p>
+                During my studies at TAFE, a class-wide competition took place
+                to create a Wordpress website for a clients’ mechatronics
+                business.
+              </p>
+              <p>
+                After my pitch, the client chose my creation as the website they
+                would use moving forward.
+              </p>
+              <p>
+                Personal highlights: Deep research on industry specific
+                requirements and competitor websites. Providing a client with my
+                product to support their business.
+              </p>
+            </div>
+
+            <!-- PHEM bullets -->
+            <ul class="text-indigo-500 list-none js-show-on-scroll">
+              <li>Wordpress</li>
+              <li>Customised PHP theme</li>
+            </ul>
+          </div>
+
+          <!-- PHEM Image -->
+          <div class="grid w-full h-full mt-6 justify-items-center">
+            <img
+              src="imgs/phem.png"
+              alt="PHEM Website"
+              height="350"
+              width="700"
+              class="shadow"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
